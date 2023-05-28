@@ -43,13 +43,26 @@ namespace test1
             //     Console.WriteLine($"Число {num3} - большее");
             // }
             // ____________дз 1 Задача 6___________________________________________
+            // Console.WriteLine("Введите число");
+            // int num = Convert.ToInt32(Console.ReadLine());
+            // if (num%2 == 0)
+            // {
+            //     Console.WriteLine($"Число {num} является четным");
+            // }
+            // else Console.WriteLine($"Число {num} не является четным");
+            // ________________дз 1 Задача 8____________________________________________
             Console.WriteLine("Введите число");
             int num = Convert.ToInt32(Console.ReadLine());
-            if (num%2 == 0)
+            int numtemp = 1 ;
+            while (numtemp <= num)
             {
-                Console.WriteLine($"Число {num} является четным");
+                if (numtemp%2 == 0) 
+                {
+                Console.WriteLine(numtemp);
+                numtemp = numtemp + 1 ;
+                } else numtemp = numtemp + 1 ;
             }
-            else Console.WriteLine($"Число {num} не является четным");
+            
         }
     }
 }
