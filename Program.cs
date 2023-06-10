@@ -13,21 +13,30 @@ namespace dz2
             // int num2 = num1 / 10 ;
             // Console.WriteLine($"Вторая цифра числа = {num2}");
         //    Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет
-               Console.WriteLine("Введите число");
+            //    Console.WriteLine("Введите число");
+            //    int num = Convert.ToInt32(Console.ReadLine());
+            //    if (num < 100)
+            //    {
+            //     Console.WriteLine("В числе нет 3-й цифры");
+            //    } else
+            //    {
+            //     while (num >= 1000)
+            //        { 
+            //         num = num / 10 ;
+            //        }
+            //        Console.WriteLine(num % 10);
+            //    }             
+                    // Задача 15: Напишите программу, которая принимает на вход цифру, 
+                    // обозначающую день недели, и проверяет, является ли этот день выходным.
+               Console.WriteLine("Введите цифру, обозначающую день недели");
                int num = Convert.ToInt32(Console.ReadLine());
-               if (num < 100)
+               if (num < 6)
                {
-                Console.WriteLine("В числе нет 3-й цифры");
+                Console.WriteLine("нет");
                } else
                {
-                while (num >= 1000)
-                   { 
-                    num = num / 10 ;
-                   }
-                   Console.WriteLine(num % 10);
-               }             
-                    
-
+                Console.WriteLine("да");
+               }
         }
     }
 }
