@@ -28,15 +28,33 @@ namespace dz2
             //    }             
                     // Задача 15: Напишите программу, которая принимает на вход цифру, 
                     // обозначающую день недели, и проверяет, является ли этот день выходным.
-               Console.WriteLine("Введите цифру, обозначающую день недели");
-               int num = Convert.ToInt32(Console.ReadLine());
-               if (num < 6)
-               {
-                Console.WriteLine("нет");
-               } else
-               {
-                Console.WriteLine("да");
-               }
+            //    Console.WriteLine("Введите цифру, обозначающую день недели");
+            //    int num = Convert.ToInt32(Console.ReadLine());
+            //    if (num < 6)
+            //    {
+            //     Console.WriteLine("нет");
+            //    } else
+            //    {
+            //     Console.WriteLine("да");
+            //    }
+            // ______________________________________________________________________________________________
+//             DZ 2__________________________Задача 21
+// Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве
+               Console.WriteLine("Введите Х1");
+               int X1 = Convert.ToInt32(Console.ReadLine());
+               Console.WriteLine("Введите Y1");
+               int Y1 = Convert.ToInt32(Console.ReadLine());
+               Console.WriteLine("Введите Z1");
+               int Z1 = Convert.ToInt32(Console.ReadLine());
+               Console.WriteLine("Введите Х2");
+               int X2 = Convert.ToInt32(Console.ReadLine());
+               Console.WriteLine("Введите Y2");
+               int Y2 = Convert.ToInt32(Console.ReadLine());
+               Console.WriteLine("Введите Z3");
+               int Z2 = Convert.ToInt32(Console.ReadLine());
+
+               double d =Math.Sqrt(Math.Pow((X2-X1),2) + Math.Pow((Y2-Y1),2) + Math.Pow((Z2-Z1),2));
+               Console.WriteLine(d);
         }
     }
 }
